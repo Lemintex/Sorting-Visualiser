@@ -1,0 +1,87 @@
+/* 2715375 */
+body, button{
+  font:14px "Trebuchet MS", sans-serif;
+  background-color: #D6D6D6;
+}
+
+h1{
+  font-size: 72px;
+  text-align: center;
+}
+
+div.buttons{
+  text-align: center;
+}
+
+.sliderInfo{
+  text-align: center;
+}
+
+.button{
+  padding: 5px 10px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 1px;
+  background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-color: #2222F5;
+  color: #EEEEEE;
+  border-color: #4646E8;
+}
+
+.button:hover{
+  background-color: #4444F5;
+}
+
+.button:active{
+    background-color: #0E0EF5;
+}
+
+.button[disabled], .button[disabled]:hover, .button[disabled]:active{
+  border-color: #E01E1E;
+  background: #E03030;
+  color: #000000
+}
+
+.slider {
+  -webkit-appearance: none;
+  margin: auto;
+  display: block;
+  appearance: none;
+  width: 50%;
+  height: 25px;
+  background: #4646E8;
+  outline: none;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb, .slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+.sliderOutput{
+  margin: auto;
+  display: block;
+  appearance: none;
+  width: 1%;
+}
+
+.algoName{
+  text-align: center;
+  font-size: 24px;
+}
+.algoDesc{
+  text-align: center;
+  font-size: 24px;
+}
+
+.algoVid{
+  display: block;
+  margin: 0 auto;
+  }

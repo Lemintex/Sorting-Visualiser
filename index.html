@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Algorithms 2715375</title>
+  <link rel="stylesheet" href="main.css">
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.sound.js"></script>
+    <script src="bubblesort.js"></script>
+    <script src="insertionsort.js"></script>
+    <script src="selectionsort.js"></script>
+    <script src="sketch.js"></script>
+</head>
+
+<body>
+  <main>
+    <h1>Sorting Algorithms in Action</h1>
+    <div id='sketch'></div>
+    <div class="buttons">
+      <button onclick="bubble.sort(); disableButtons()" class="button">Bubble Sort</button>
+      <button onclick="insertion.sort(); disableButtons()" class="button">Insertion Sort</button>
+      <button onclick="selection.sort(); disableButtons()" class="button">Selection Sort</button>
+    </div>
+    <p class="sliderInfo">Animation Speed Slider</p>
+    <input type="range" min="0" max="100" value="0" class="slider" id="speedSlider" onchange="evalSlider()">
+    <output id="sliderVal" class="sliderOutput"></output>
+    <p id="AlgorithmName" class="algoName"></p>
+    <p id="AlgorithmDesc" class="algoDesc"></P>
+    <iframe id = "AlgorithmVid" class="algoVid" width="704" height="328" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </main>
+</body>
+</html>
